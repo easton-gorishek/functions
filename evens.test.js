@@ -14,7 +14,7 @@ describe('even functions', () => {
 
   it('returns true if all numbers within array are even', () => {
     const result = allEvens([2, 4, 6]);
-    expect(result).toEqual(true);
+    expect(result).toBeTruthy();
   });
 
   it('adds all the evens together', () => {
