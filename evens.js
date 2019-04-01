@@ -1,3 +1,5 @@
+const add = require('./add.js');
+
 function evens(arr) {
   return arr.filter(num => num % 2 === 0);
 }
@@ -11,7 +13,7 @@ function allEvens(arr) {
 }
 
 function addEvens(arr) {
-  return arr.filter(n => n % 2 === 0).reduce((acc, cur) => acc + cur);
+  return add(evens(arr));
 }
 
 module.exports = {
